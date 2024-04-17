@@ -1,6 +1,6 @@
-# Add private metrics extension for EverShop by @thenguyen
+# Add private metrics extension for EverShop
 
-This extension is implemented based on another npm package - Evershop @thenguyen. 
+This extension is implemented based on another npm package - Evershop by @thenguyen. 
 
 It allows you to track the essential e-commerce user actions: view, click, add to cart, checkout and order. 
 
