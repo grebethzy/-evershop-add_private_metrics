@@ -1,0 +1,12 @@
+type Click {
+    clickId: Int!
+    customerId: Int
+    customerEmail: String
+    productId: Int
+    urlKey: String!
+    actionTime: String!
+}
+
+extend type Customer {
+    clicks: [Click]
+}

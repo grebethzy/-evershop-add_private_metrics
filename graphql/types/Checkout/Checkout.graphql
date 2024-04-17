@@ -1,0 +1,18 @@
+"""
+Overwrites the checkout object in the store.
+"""
+type Checkout {
+    checkoutId: Int!
+    customerId: Int
+    customerEmail: String
+    actionTime: String!
+    cartId: String!
+}
+
+extend type Query {
+    checkout: Checkout!
+}
+
+extend type Customer {
+    checkouts: [Checkout]
+}

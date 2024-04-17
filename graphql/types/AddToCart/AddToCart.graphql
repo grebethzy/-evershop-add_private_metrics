@@ -1,0 +1,11 @@
+type AddToCart {
+    addtocartId: Int!
+    customerId: Int
+    customerEmail: String
+    productId: Int
+    actionTime: String!
+}
+
+extend type Customer {
+  addToCarts: [AddToCart]
+}

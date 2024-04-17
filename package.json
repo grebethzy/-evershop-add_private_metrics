@@ -1,0 +1,21 @@
+{
+    "name": "addprivatemetrics",
+    "version": "1.0.1",
+    "description": "This is an extension created for Evershop devleoped by @thenguyen, targeting to collect user behavior metrics. ",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/grebethzy/evershop-extensions.git"
+    },
+    "keywords": [
+        "Evershop",
+        "add",
+        "private",
+        "metrics"
+    ],
+    "author": "grebethzy",
+    "license": "GPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/grebethzy/evershop-extensions/issues"
+    },
+    "homepage": "https://github.com/grebethzy/evershop-extensions#readme"
+}

@@ -1,0 +1,10 @@
+type PrivacyOrder {
+    orderId: Int!
+    customerId: Int
+    customerEmail: String
+    actionTime: String!
+}
+
+extend type Customer {
+  privacyOrders: [PrivacyOrder]
+}

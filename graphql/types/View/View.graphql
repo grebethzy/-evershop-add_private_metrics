@@ -1,0 +1,12 @@
+type View {
+    viewId: Int!
+    customerId: Int
+    customerEmail: String
+    productId: Int
+    urlKey: String!
+    actionTime: String!
+}
+
+extend type Customer {
+  views: [View]
+}
