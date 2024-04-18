@@ -10,7 +10,7 @@ module.exports = async function graphql(request, response, delegate, next) {
       .given({
         customer_id,
         customer_email, 
-        cart_id: cart_id, 
+        cartId: cart.cartId, 
         totalqty: cart.totalQty,
         subtotalvalue: cart.subTotal ? cart.subTotal.value: null, 
         subtotaltext: cart.subTotal ? cart.subTotal.text: null,

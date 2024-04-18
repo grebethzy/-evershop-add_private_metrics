@@ -5,7 +5,7 @@ module.exports = (request, response) => {
       throw new Error('cusomter Id is required');
     }
 
-    if (!body.cart_id) {
-      throw new Error('cart Id is required');
+    if (!body.cart) {
+      throw new Error('cart is required');
     }
   }

@@ -37,9 +37,19 @@ module.exports = exports = async (connection) => {
               FROM cart
               WHERE cart_id = cart_id_var;
 
+              -- Check if customer_id is found; if not, fetch from customer table using email
+              IF customer_id_var IS NULL AND customer_email_var IS NOT NULL THEN
+                  SELECT customer_id INTO customer_id_var
+                  FROM customer
+                  WHERE email = customer_email_var;
+              END IF;
+
               -- Insert into privacy_addtocarts with the fetched values
-              INSERT INTO privacy_addtocarts (customer_id, customer_email, product_id)
-              VALUES (customer_id_var, customer_email_var, NEW.product_id);
+              -- Only insert if customer_id is not null
+              IF customer_id_var IS NOT NULL THEN
+                  INSERT INTO privacy_addtocarts (customer_id, customer_email, product_id)
+                  VALUES (customer_id_var, customer_email_var, NEW.product_id);
+              END IF;
           END IF;
 
           RETURN NEW;

@@ -1,6 +1,6 @@
 # Add private metrics extension for EverShop
 
-This extension is implemented based on another npm package - Evershop by @thenguyen. 
+This extension is implemented based on another npm package - Evershop @thenguyen. 
 
 It allows you to track the essential e-commerce user actions: view, click, add to cart, checkout and order. 
 
@@ -47,4 +47,3 @@ Edit the `config/default.json` file in the root directory of your EverShop insta
 The extension has preloaded some products for testing purpose. It also pre-set the shipping zone to include the US. 
 User can directly create a new account and perform the five actions, which will be reflected in the backend database.
 Use ```psql -U postgres -d evershop``` to check the updates. 
-
