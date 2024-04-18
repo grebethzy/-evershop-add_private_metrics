@@ -17,7 +17,7 @@ There are three approaches to install the Evershop application, please refer to:
 ### Step 1: Install the extension using npm:
 
 ```bash
-npm i addPrivateMetrics
+npm i add-private-metrics
 ```
 
 ### Step 2: Enable the extension
@@ -32,8 +32,8 @@ Edit the `config/default.json` file in the root directory of your EverShop insta
     "extensions": [
       ...,
       {
-        "name": "addPrivateMetrics",
-        "resolve": "node_modules/addPrivateMetrics",
+        "name": "add-private-metrics",
+        "resolve": "node_modules/add-private-metrics",
         "enabled": true,
         "priority": 10
       }
