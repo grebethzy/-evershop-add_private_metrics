@@ -1,6 +1,6 @@
 {
     "name": "add-private-metrics",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "This is an extension created for Evershop devleoped by @thenguyen, targeting to collect user behavior metrics. ",
     "repository": {
         "type": "git",
